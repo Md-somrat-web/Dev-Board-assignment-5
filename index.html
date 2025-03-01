@@ -29,9 +29,13 @@
             class="flex items-center py-3 px-5 bg-[#F4F7FF] rounded-[32px] gap-3 mr-[38px]"
           >
             <img src="image/checkbox (1).png" alt="" />
-            <h2 class="font-bold text-[32px]">23</h2>
+            <h2 class="font-bold text-[32px]">
+              <span id="number-two">23</span>
+            </h2>
           </div>
-          <div><img src="image/calender (2).png" alt="" /></div>
+          <button onclick="changeColor()">
+            <div><img src="image/calender (2).png" alt="" /></div>
+          </button>
         </div>
       </nav>
     </header>
@@ -47,12 +51,13 @@
         </div>
         <div>
           <h2>Task Assigned </h2>
-          <h2 class="text-2xl font-bold">05</h2>
+          <h2 id="number-one" class="text-2xl font-bold">05</h2>
         </div>
       </div>
 
       <div
-        class="flex p-10 col-span-2 py-[30px] bg-[#3752FD] gap-[22px] rounded-xl items-center"
+        id="click-blogs"
+        class="flex p-10 col-span-2 py-[30px] bg-[#3752FD] gap-[22px] rounded-xl items-center cursor-pointer"
       >
         <img src="image/calender (1).png" alt="" />
         <p class="text-xl text-white">
@@ -65,8 +70,8 @@
           <img class="w-7 h-7" src="image/checkbox (1).png" alt="" />
         </div>
         <div>
-          <h2 class="text-">Task Assigned </h2>
-          <h2 class="text-[32px] font-bold">05</h2>
+          <h2 class="">Wed</h2>
+          <h2 class="font-bold">Jul 28 2025</h2>
         </div>
       </div>
       <!-- activity log -->
@@ -77,9 +82,13 @@
           <h2 class="font-bold">Activity Log</h2>
         </div>
 
-        <button class="btn bg-[#3752FD] p-3 rounded-lg mt-4 text-white">
+        <button
+          id="table"
+          class="btn bg-[#3752FD] p-3 rounded-lg mt-4 text-white"
+        >
           Clear History
         </button>
+        <div id="table"></div>
       </div>
     </div>
     <!-- card title  area end -->
@@ -100,7 +109,10 @@
               <h3 class="font-bold">21 March 2025</h3>
             </div>
             <div>
-              <button class="btn p-3 bg-[#3752FD] text-white rounded-lg">
+              <button
+                id="completed"
+                class="btn p-3 bg-[#3752FD] text-white rounded-lg"
+              >
                 Completed
               </button>
             </div>
@@ -109,7 +121,7 @@
         <div class="bg-[#F4F7FF] p-6 space-y-4 rounded-lg">
           <h2 class="bg-white inline-block p-2 rounded-md">CloudSync</h2>
           <h1 class="text-2xl">Add Dark Mode</h1>
-          <p class="bg-white p-2 rounded-md">
+          <p class="bg-white p-2 pt-10 rounded-md">
             Store the user's preference in localStorage, update CSS variables
             dynamically, and apply a smooth transition effect.
           </p>
@@ -120,7 +132,10 @@
               <h3 class="font-bold">21 March 2025</h3>
             </div>
             <div>
-              <button class="btn p-3 bg-[#3752FD] text-white rounded-lg">
+              <button
+                id="completed"
+                class="btn p-3 bg-[#3752FD] text-white rounded-lg"
+              >
                 Completed
               </button>
             </div>
@@ -129,7 +144,7 @@
         <div class="bg-[#F4F7FF] p-6 space-y-4 rounded-lg">
           <h2 class="bg-white inline-block p-2 rounded-md">SwiftPay</h2>
           <h1 class="text-2xl">Optimize Home page </h1>
-          <p class="bg-white p-2 rounded-md">
+          <p class="bg-white pt-2 rounded-md">
             Debug using Chrome DevTools, check for overlapping elements, and
             ensure onClick works properly
           </p>
@@ -140,7 +155,10 @@
               <h3 class="font-bold">21 March 2025</h3>
             </div>
             <div>
-              <button class="btn p-3 bg-[#3752FD] text-white rounded-lg">
+              <button
+                id="completed"
+                class="btn p-3 bg-[#3752FD] text-white rounded-lg"
+              >
                 Completed
               </button>
             </div>
@@ -160,7 +178,10 @@
               <h3 class="font-bold">21 March 2025</h3>
             </div>
             <div>
-              <button class="btn p-3 bg-[#3752FD] text-white rounded-lg">
+              <button
+                id="completed"
+                class="btn p-3 bg-[#3752FD] text-white rounded-lg"
+              >
                 Completed
               </button>
             </div>
@@ -169,7 +190,7 @@
         <div class="bg-[#F4F7FF] p-6 space-y-4 rounded-lg">
           <h2 class="bg-white inline-block p-2 rounded-md">Google LLC</h2>
           <h1 class="text-2xl">Integrate OpenAI API</h1>
-          <p class="bg-white p-2 rounded-md">
+          <p class="bg-white rounded-md">
             Debug using Chrome DevTools, check for overlapping elements, and
             ensure onClick works properly and ensure onClick works properly
           </p>
@@ -180,7 +201,10 @@
               <h3 class="font-bold">21 March 2025</h3>
             </div>
             <div>
-              <button class="btn p-3 bg-[#3752FD] text-white rounded-lg">
+              <button
+                id="completed"
+                class="btn p-3 bg-[#3752FD] text-white rounded-lg"
+              >
                 Completed
               </button>
             </div>
@@ -189,7 +213,7 @@
         <div class="bg-[#F4F7FF] p-6 space-y-4 rounded-lg">
           <h2 class="bg-white inline-block p-2 rounded-md">Glassdoar</h2>
           <h1 class="text-2xl">Improve Job searching</h1>
-          <p class="bg-white p-2 rounded-md">
+          <p class="bg-white pt-2 rounded-md">
             Debug using Chrome DevTools, check for overlapping elements, and
             ensure onClick works properly and ensure onClick works properly
           </p>
@@ -200,7 +224,10 @@
               <h3 class="font-bold">21 March 2025</h3>
             </div>
             <div>
-              <button class="btn p-3 bg-[#3752FD] text-white rounded-lg">
+              <button
+                id="completed"
+                class="btn p-3 bg-[#3752FD] text-white rounded-lg"
+              >
                 Completed
               </button>
             </div>
@@ -209,5 +236,6 @@
       </div>
     </div>
     <!-- card area end -->
+    <script src="dev.js"></script>
   </body>
 </html>

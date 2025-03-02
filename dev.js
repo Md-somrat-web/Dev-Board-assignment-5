@@ -1,4 +1,4 @@
-const allButtons = document.querySelectorAll("#completed");
+const allButtons = document.querySelectorAll("#completed ");
 for (let btn of allButtons) {
   btn.addEventListener("click", function (event) {
     alert("Board updated Successfully");
@@ -28,11 +28,9 @@ function newTrCreate(title) {
   const hour = d.getHours();
   const ampm = hour >= 12 ? "pm" : "am";
 
-  newTr.innerHTML = `<td class="mt-5 bg-white  text-black gap-8  pt-5 font-medium ">You have completed the task ${title} at ${hour}: ${d.getMinutes()} : ${d.getSeconds()} ${ampm}</td>`;
+  newTr.innerHTML = `<td class="mt-5 bg-[#F4F7FF]  text-black gap-8  pt-5 font-medium ">You have completed the task ${title} at ${hour}: ${d.getMinutes()} : ${d.getSeconds()} ${ampm}</td>`;
   return Table.appendChild(newTr);
 }
 document.getElementById("click-blogs").addEventListener("click", function () {
   window.location.href = "/Blogs.html";
 });
-
-

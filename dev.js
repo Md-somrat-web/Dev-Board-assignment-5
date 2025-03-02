@@ -32,7 +32,7 @@ function newTrCreate(title) {
   return Table.appendChild(newTr);
 }
 document.getElementById("click-blogs").addEventListener("click", function () {
-  window.location.href = "/Blogs.html";
+  window.location.href = "Blogs.html";
 });
 
 document.getElementById("clear").addEventListener("click", function () {

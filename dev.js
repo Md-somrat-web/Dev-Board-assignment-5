@@ -28,12 +28,11 @@ function newTrCreate(title) {
   const hour = d.getHours();
   const ampm = hour >= 12 ? "pm" : "am";
 
-  newTr.innerHTML = `<td class="mt-5 bg-white text-black gap-8  pt-5 font-medium ">You have completed the task ${title} at ${hour}: ${d.getMinutes()} : ${d.getSeconds()} ${ampm}</td>`;
+  newTr.innerHTML = `<td class="mt-5 bg-white  text-black gap-8  pt-5 font-medium ">You have completed the task ${title} at ${hour}: ${d.getMinutes()} : ${d.getSeconds()} ${ampm}</td>`;
   return Table.appendChild(newTr);
 }
 document.getElementById("click-blogs").addEventListener("click", function () {
   window.location.href = "/Blogs.html";
 });
-document.getElementById("go-Back").addEventListener("click", function () {
-  window.history.back("index.html");
-});
+
+

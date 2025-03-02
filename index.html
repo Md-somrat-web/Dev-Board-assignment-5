@@ -33,9 +33,7 @@
               <span id="number-two">23</span>
             </h2>
           </div>
-          <button onclick="changeColor()">
-            <div><img src="image/calender (2).png" alt="" /></div>
-          </button>
+          <div><img src="image/calender (2).png" alt="" /></div>
         </div>
       </nav>
     </header>
@@ -57,7 +55,7 @@
 
       <div
         id="click-blogs"
-        class="flex p-10 col-span-2 py-[30px] bg-[#3752FD] gap-[22px] rounded-xl items-center cursor-pointer"
+        class="flex p-10 col-span-2 py-[30px] bg-[#3752FD] gap-[22px] rounded-xl items-center cursor-pointer bg-gradient-to-r from-[#3752FD] to-[#c2c9f5]"
       >
         <img src="image/calender (1).png" alt="" />
         <p class="text-xl text-white">
@@ -67,7 +65,7 @@
       </div>
       <div class="flex items-center py-8 px-6 bg-[#F4F7FF] gap-5 rounded-xl">
         <div>
-          <img class="w-7 h-7" src="image/checkbox (1).png" alt="" />
+          <img class="w-7 h-7" src="image/fi-sr-calendar.png" alt="" />
         </div>
         <div>
           <h2 class="">Wed</h2>
@@ -83,14 +81,14 @@
         </div>
 
         <button
-          id="table"
+          id="clear"
           class="btn bg-[#3752FD] p-3 rounded-lg mt-4 text-white"
         >
           Clear History
         </button>
-        <div id="table"></div>
       </div>
     </div>
+
     <!-- card title  area end -->
     <!-- card area start -->
     <div class="container grid grid-cols-5 mt-11 gap-6">
@@ -234,6 +232,7 @@
           </div>
         </div>
       </div>
+      <div id="table" class=""></div>
     </div>
     <!-- card area end -->
     <script src="dev.js"></script>

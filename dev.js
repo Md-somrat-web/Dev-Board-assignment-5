@@ -34,3 +34,11 @@ function newTrCreate(title) {
 document.getElementById("click-blogs").addEventListener("click", function () {
   window.location.href = "/Blogs.html";
 });
+
+document.getElementById("clear").addEventListener("click", function () {
+  this.remove;
+});
+// /Remove text
+function removeText() {
+  document.getElementById("table").innerText = "";
+}
